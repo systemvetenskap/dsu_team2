@@ -1,0 +1,346 @@
+﻿/*----------------------Reset-------------------------*/
+html, main, container, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+h6, p, ol, ul, li,
+blockquote, pre, form, lable, legend, table, caption, thead, tbody, tfoot,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 80%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.nav {
+}
+
+container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+}
+
+/*----------------Bookingtable------------------*/
+#bookingtable {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+th {
+    text-align: right;
+    border: 3px solid red;
+    border-radius: 3px;
+    background-color: gray;
+    margin-right: 2px;
+    padding: 3px;
+}
+
+tr {
+    margin-top: 2px;
+}
+
+.auto-style9 {
+    border: 3px solid red;
+    border-radius: 3px;
+    background-color: aqua;
+    width: 150px;
+    height: auto;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+td:hover {
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+/*-----------------Players------------------*/
+p {
+    display: block;
+    border: 1px;
+    float: left;
+}
+
+    p:hover {
+        cursor: pointer;
+    }
+
+.first {
+    display: block;
+    border: 1px;
+    float: left;
+    margin-left: 1px;
+}
+
+.time {
+    display: block;
+    float: right;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: beige;
+}
+
+.players {
+    width: 16px;
+    height: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-right: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: beige;
+}
+
+.last {
+    margin-right: 0;
+}
+
+
+/* #region Mina sidor*/
+/* #region Navigation*/
+
+
+.bookedm {
+    background-color: yellow;
+    background-color: red;
+    display: block;
+}
+
+div.localNavigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    
+    
+}
+
+div.localNavigation li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+div.localNavigation a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+div.localNavigation li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.localNavigation {
+
+margin-left: 0px;
+height: 100%;
+margin-top: 0px;
+background:black;
+width: 15%;
+min-width: 120px;
+}
+.myChanges
+{
+    visibility: visible;
+  
+    width: auto;    
+    height: 25px;
+    overflow: hidden;
+}
+.myChanges:hover
+{
+    /*height: auto;*/
+}
+/* #endregion Navigation*/
+/* #region Main content */
+div.mainContent {
+    margin-left: 18%;
+    padding: 1px 16px;
+    height: 1000px;
+
+}
+
+
+/* #endregion Main content*/
+
+/* #endregion Mina sidor*/
+
+.bookedm {
+    background-color: yellow;
+    display: block;
+    border: 1px;
+    float: left;
+    width: 16px;
+    height: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-right: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bookedf {
+    background-color: rosybrown;
+    display: block;
+    border: 1px;
+    float: left;
+    width: 16px;
+    height: 20px;
+    border: 1px solid black;
+    border-bottom: none;
+    margin-right: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* #region Footer*/
+div.footer {
+    background-color: #237c06;
+    height: 100%;
+    margin-bottom: auto;
+    bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+div.footerSections {
+    padding-top: 2%;
+    float: left;
+    width: 33.3%;
+}
+
+
+div.footer ul, div.footer h3 {
+    margin-left: 7%;
+    margin-top: 7%;
+    list-style-type: none;
+}
+
+div.footer h3 {
+    font-size: 2em;
+    color: #f9cf10;
+    border-bottom: 2px solid #033b12;
+    display: inline;
+}
+
+
+div.footer ul, div.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+div.copywrite {
+    margin: 0,0,0,0;
+    height: auto;
+    float: left;
+    width: 100%;
+    padding-top: 2%;
+}
+
+    div.copywrite p {
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+/*#endregion Footer*/
+
+.clear:before, .clear:after {
+    content: "";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+.registerForm {
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+#ContentPlaceHolder1_ButtonRegister {
+    margin-top: 20px;
+}
+.buttonRegister {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#ContentPlaceHolder1_DropCategory {
+    width: 35%;
+}
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 20px;
+}
+.register-h1 {
+    margin-bottom: 20px;
+}
+div.footer {
+    background-color: #4C853A;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+div.footerSections {
+    text-align: center;
+}
+.copywrite .copy {
+
+}
+.copywrite .group {
+
+}
+#formLogin {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+form {
+    margin-bottom: 20px;
+}
+#formEditMember {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookingDetailClass {
+    display:none;
+    float:right;
+    width:500px;
+    height: 240px;
+    background-color:yellow;
+}
+.txtBoxBookingGolfIdClass {
+    margin-top: 150px;
+}
+/*
+.lblBookingDetailClassLast {
+    margin-bottom:150px;
+}*/

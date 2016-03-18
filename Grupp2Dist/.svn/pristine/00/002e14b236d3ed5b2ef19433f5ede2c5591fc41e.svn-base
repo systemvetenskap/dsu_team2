@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="headSite.master.cs" Inherits="GolfBokning.headSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>DSU_G2</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script type="text/javascript" src="Scripts/global.js"></script>
+    <link rel="stylesheet" href="StyleSheet.css"/>
+    <link rel="stylesheet" href="staff.css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+    <!-- Header -->
+    <div class="header"> 
+
+        <!--Navigation -->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="startside.aspx">Hålslaget GK</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="startside.aspx">Hem</a></li>
+              <li><a href="#">Om klubben</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                  <a href="register.aspx">
+                    <span class="glyphicon glyphicon-user"></span>
+                    Bli medlem
+                  </a>
+              </li>
+              <li>
+                  <asp:HyperLink ID="LoginLogout" runat="server" href="#">
+                      Logga in
+                  </asp:HyperLink>
+              </li>
+            </ul>
+          </div>
+        </nav>
+     </div> 
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+    <!-- Footer-->
+    <div class="footer">
+
+        <div class="footerSections Webbinnehåll">
+            <h3>Webbinnehåll</h3>
+            <ul>
+              <li><a href = "minasidor.aspx">Startsida</a></li>
+              <li>Nyheter</li>
+              <li><a href = "register.aspx">Bli medlem</a></li>
+              <li><a href = "about.aspx">Klubbinformation</a></li>
+              <li>Baninformation</li>
+              <li><a href = "minasidor.aspx">Mina sidor</a></li>
+            </ul>
+        </div>  
+
+        <div class="footerSections Adress">
+            <h3>Adress</h3>
+            <ul>
+              <li>Gatuadress</li>
+              <li>Postnummer</li>
+              <li>Ort</li>
+            </ul>
+        </div>  
+
+        <div class="footerSections Kontakt">
+            <h3>Kontakt</h3>
+            <ul>
+              <li>Telefonnummer: 000 000 000</li>
+              <li>golklubbgrupp2@gmail.com</li>
+            </ul>
+        </div>  
+
+        <div class="copywrite">
+            <p class="group">&copy; 2016 | Grupp 2 Mittuniversitet</p>
+        </div>
+
+    </div>
+    
+    </div>
+</body>
+</html>

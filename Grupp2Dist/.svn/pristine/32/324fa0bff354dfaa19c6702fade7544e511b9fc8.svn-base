@@ -1,0 +1,93 @@
+﻿CREATE OR REPLACE FUNCTION makebooking (golfID varchar,stdate TIMESTAMP, bookby int, entried varchar)
+RETURNS varchar AS $total$
+declare	total integer;
+declare rid integer;
+declare isExist BOOLEAN;
+declare endDa DATE;
+declare handi numeric(3,1);
+declare inpHand NUMERIC(3,1);
+declare opID integer;
+declare boBy int;
+declare membId INTEGER;
+BEGIN
+
+SELECT count(*) INTO total FROM booking 
+inner join booked on booking.id = booked.id_booking 
+inner join member on member.id = booked.id_member
+WHERE member.golf_id= golfID   and ((starttime) = (stdate));
+if (total > 0) THEN
+return 'Member already booked on the pass';
+END IF;
+
+
+SELECT count(*) INTO total FROM booking inner join booked on booking.id = booked.id_booking 
+inner join member on member.id = booked.id_member
+WHERE member.golf_id= golfID   and (DATE(starttime) = DATE(stdate));
+if (total > 1) THEN
+return 'Member already booked twice';
+END IF;
+SELECT (maxbook - count(*)) INTO total FROM booking  
+                             inner join booked on booking.id = booked.id_booking  
+                             inner join member on member.id = booked.id_member  
+                             inner join opening on opening.id = booking.id_opening  
+                             WHERE  (starttime) = stdate  
+                            group by maxbook;
+if ( total < 1) THEN
+return 'The course are fullboked';
+END IF;
+SELECT COUNT(*) INTO total FROM opening WHERE (startperiod <= stdate::date and  ( stdate::date < endperiod))
+and (openingtime <= stdate::time and  ( stdate::time < closetime));
+if (total = 0) THEN
+RETURN 'The lane are closed';
+END IF;
+SELECT sum(hcp)::NUMERIC(3, 1) INTO handi FROM booking  
+                             inner join booked on booking.id = booked.id_booking  
+                             inner join member on member.id = booked.id_member  
+                             inner join opening on opening.id = booking.id_opening  
+                             WHERE  (starttime) = stdate  
+                            group by maxbook;
+SELECT hcp into inpHand FROM member where golf_id = golfId GROUP BY hcp;
+--return inpHand;
+if ( inpHand IS NULL) THEN
+RETURN 'The golfer does not exist';
+elseif(((inpHand + handi) >= 100)) THEN
+RETURN 'The handicap must be less then 100';
+END IF;
+
+if ( LENGTH(CAST(bookby AS VARCHAR)) < 1) THEN
+	boby = null;
+else
+boby = bookby;
+END IF;
+SELECT  id into membID FROM member where golf_id = golfId;
+SELECT id INTO opID FROM opening WHERE (startperiod <= stdate::date and  ( stdate::date < endperiod))
+and (openingtime <= stdate::time and  ( stdate::time < closetime));
+SELECT COUNT(*) into total from booking where starttime = stdate;
+if (total < 1) THEN
+begin   
+		INSERT INTO booking (id_opening, starttime, endtime, bookedby) VALUES (opID, stdate,stdate,boby) returning id INTO total;
+exception when others then 
+    RETURN 'The transaction is in an uncommittable state. '
+                 '% %', SQLERRM, SQLSTATE;    
+end;
+	
+end if;
+
+begin   
+		INSERT INTO booked (id_member, id_booking) VALUES (membID, total)  ;
+RETURN 1;
+exception when others then 
+    RETURN 'The transaction is in an uncommittable state. '
+                 'Transaction was rolled back';    
+end;
+
+
+return  inphand;
+   --SELECT count(*) into total FROM dbname;
+   --RETURN total;
+END;
+$total$ LANGUAGE plpgsql;
+
+
+
+
