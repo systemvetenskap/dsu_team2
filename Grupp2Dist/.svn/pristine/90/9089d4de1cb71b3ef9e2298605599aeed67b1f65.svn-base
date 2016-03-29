@@ -1,0 +1,144 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="headSite.master.cs" Inherits="GolfBokning.headSite" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>DSU_G2</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="Scripts/global.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.cookie.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="Scripts/jquery-ui-timepicker-addon.js"></script>
+    <link rel="stylesheet" href="jquery-ui-timepicker-addon.css" />
+    <link rel="stylesheet" href="StyleSheet.css" />
+    <link rel="stylesheet" href="staff.css" />
+    <%--<link rel="shortcut icon" type="~/favicon.icoimage/ico" href="http://miun-dsu2.azurewebsites.net/favicon.ico">--%>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="icon" type="image/gif" href="animated_favicon1.gif"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <!-- Header -->
+        <div class="headerHolder">
+
+            <div class="header">
+                <img src="images\logo.png" alt="logo" />
+                <h1>Hålslaget GK</h1>
+            </div>
+
+             <!--Navigation -->
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    
+            <ul class="nav navbar-nav">
+                <li><a href="startside.aspx">Hem</a></li>
+                <li><a href="applogin.aspx">Vår nya app</a></li>
+     
+               
+            </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" style="cursor:default;" class="a-no-change">
+                                <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
+                            </a>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="LoginCreate" runat="server" href="#">
+                      Bli medlem
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="LoginCreate2" runat="server" href="#">
+                            </asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="LoginLogout" runat="server" href="#">
+                      Logga in
+                            </asp:HyperLink>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Local navigation -->
+        <div id="MinaSidor" class="localNavigation">
+            <ul>
+                <li><asp:HyperLink ID="NavMinaSidor" runat="server" href="minasidor.aspx">Mina sidor</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavBooking" runat="server" href="booking.aspx">Boka bana</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavTournamentmembadd" runat="server" href="tournamentmembadd.aspx">Alla tävlingar</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavTournamentresult" runat="server" href="tournamentresult.aspx">Tävlingsresultat</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavChat" runat="server" href="chatt.aspx">Chatt</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavMyAccount" runat="server"  href="myAccount.aspx" >Mina uppgifter</asp:HyperLink></li>
+            </ul>
+        </div>
+
+        <!-- Local navigation -->
+        <div id="PersonalVerktyg" class="localNavigation2 personalVerktyg">
+            <ul>
+                <li><asp:HyperLink ID="NavPersonalVerktyg" runat="server" href="personalverktyg.aspx">Personalverktyg</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavBookingPersonal" runat="server" href="booking.aspx">Boka bana</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavCloseLane" runat="server" href="closeLane.aspx">Stäng bana</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavUnbook" runat="server" href="unbook.aspx">Avboka bana</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavTournament" runat="server" href="tournament.aspx">Hantera tävlingar</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavAddResults" runat="server" href="addResults.aspx">Lägg till resultat</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavTournamentPers" runat="server" href="tournamentpers.aspx">Tävlingsanmälan</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavMember" runat="server" href="member.aspx">Hantera medlem</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavStaffMember" runat="server" href="staffmember.aspx">Hantera personal</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavNews" runat="server" href="news.aspx">Hantera nyheter</asp:HyperLink></li>
+                <li><asp:HyperLink ID="NavSendMail" runat="server" href="sendMail.aspx">Skicka epost</asp:HyperLink></li>
+            </ul>
+        </div>
+
+        <asp:Panel ID="PanelHidden" runat="server"></asp:Panel>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <!-- Footer-->
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footerSections Webbinnehåll">
+                <h3>Innehåll</h3><br />
+                <img src="images\golf-stick.png" />
+                <ul>
+                    <li><a href="minasidor.aspx">Startsida</a></li>
+                    <li>Nyheter</li>
+                    <li><a href="register.aspx">Bli medlem</a></li>
+                </ul>
+            </div>
+
+            <div class="footerSections Adress">
+                <h3>Adress</h3><br />
+                <img src="images\golf-stick.png" />
+                <ul>
+                    <li>Gatuadress</li>
+                    <li>Postnummer</li>
+                    <li>Ort</li>
+                </ul>
+            </div>
+
+            <div class="footerSections Kontakt">
+                <h3>Kontakt</h3><br />
+                <img src="images\golf-stick.png" />
+                <ul>
+                    <li>Telefonnummer: 000 000 000</li>
+                    <li>golklubbgrupp2@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="copywrite">
+                <p class="group">&copy; 2016 | Grupp 2 Mittuniversitet</p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

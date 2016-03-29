@@ -1,0 +1,1118 @@
+﻿/*----------------------Reset-------------------------*/
+html, main, container, body, div, span, h1, h2, h3, h4, h5, h6, p, ol, ul, li,
+h6, p, ol, ul, li,
+blockquote, pre, form, lable, legend, table, caption, thead, tbody, tfoot,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, section, summary, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 80%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/background2.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*-----------------Header--------------------*/
+div.header {
+    background-color: #3b7895;
+    height: 180px;
+    background-image: url(images/Banner.png);
+}
+
+    div.header img {
+        float: left;
+        height: 180px;
+        max-height: 165px;
+    }
+
+    div.header h1 {
+        font-size: 4em;
+        color: white;
+        float: left;
+        padding: 30px 0 0 30px;
+    }
+
+div.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #FFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/*----------------Bookingtable------------------*/
+.visaDatumDivClass {
+}
+
+.lblVisaDatumClass {
+    vertical-align: middle;
+}
+
+#bookingtable {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.auto-style9 {
+    border: 1px solid #ddd !important;
+    padding: 5px !important;
+    position: relative;
+}
+
+td:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.ui-autocomplete {
+    position: absolute;
+    cursor: default;
+}
+
+.ui-menu {
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    display: block;
+    float: left;
+    background-color: #f9f9f9;
+    border: 1px solid #efefef;
+    border-radius: 3px 3px 3px 3px;
+    z-index: 2147483647;
+}
+
+    .ui-menu .ui-menu {
+        margin-top: -3px;
+    }
+
+    .ui-menu .ui-menu-item {
+        margin: 0;
+        padding: 0;
+        zoom: 1;
+        float: left;
+        clear: left;
+        width: 100%;
+        font-family: arial;
+    }
+
+        .ui-menu .ui-menu-item a {
+            text-decoration: none;
+            display: block;
+            padding: .1em .3em;
+            line-height: 1.5;
+            zoom: 1;
+        }
+
+            .ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+                font-weight: bold;
+            }
+
+/*-----------------Players------------------*/
+p {
+    display: block;
+    border: 1px;
+    float: left;
+}
+
+    p:hover {
+    }
+
+a:hover {
+    cursor: pointer;
+}
+
+.first {
+    display: block;
+    border: 1px;
+    float: left;
+    margin-left: 1px;
+}
+
+.time {
+    display: block;
+    float: right;
+    position: absolute;
+    right: 5px;
+    padding: 2px;
+    top: 0px;
+    background: #FFFFFF;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.lblHandicap {
+    font-size: 10px;
+    top: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    text-transform: uppercase;
+}
+
+.hcp_val {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.players {
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    margin-right: 5%;
+    font-size: 7px;
+    text-align: center;
+    border-radius: 100%;
+    color: #000;
+    border: 1px solid #336F1A;
+    background: #5BB337;
+}
+
+#ContentPlaceHolder1_bookingtable tbody tr th {
+    text-align: right;
+}
+
+.last {
+    margin-right: 0;
+}
+
+
+/* #region Mina sidor*/
+div.containerMinaSidor {
+    background-color: white;
+    min-height: 400px;
+}
+
+
+
+.bookedm {
+    background-color: yellow;
+    background-color: red;
+    display: block;
+}
+
+/*-----------------Navigation------------------*/
+
+
+div.localNavigation, div.localNavigation2 {
+    display: none;
+    position: absolute;
+    margin-left: 0px;
+    height: 100%;
+    margin-top: 0px;
+    width: 9%;
+    min-width: 120px;
+    float: left;
+    margin-left: 1%;
+}
+
+    div.localNavigation ul, div.localNavigation2 ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+    }
+
+    div.localNavigation li a, div.localNavigation2 li a {
+        display: block;
+        color: #000;
+        padding: 8px 0 8px 16px;
+        text-decoration: none;
+    }
+
+    div.localNavigation a.active, div.localNavigation2 a.active {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    div.localNavigation li a:hover:not(.active), div.localNavigation2 li a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+    }
+
+
+
+
+.myChanges {
+    visibility: visible;
+    width: auto;
+    overflow: hidden;
+}
+
+    .myChanges:hover {
+        /*height: auto;*/
+    }
+
+
+
+/*-----------------Main content------------------*/
+div.mainContent {
+    margin-left: 18%;
+    padding: 1px 16px 30px 0;
+    height: auto;
+    width: 80%;
+}
+
+div.minaBokningar, div.minaBokningar h2 {
+    padding: 10px 0 10px 0;
+}
+
+
+div.minaSidorLinks {
+    padding-bottom: 50px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+
+div.link {
+    width: 35%;
+    float: left;
+    margin: 50px 10% 0 5%;
+}
+
+div.link2, div.link4 {
+    margin-right: 0;
+}
+
+div.link img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+}
+
+
+
+div.minaSidorLinks h2 {
+    background-color: #237c06;
+    color: white;
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+    font-size: 20px;
+    padding: 7px 0 7px 0;
+}
+
+div.link:hover {
+    outline: 2px solid #eb9b00;
+    cursor: pointer;
+}
+/* #endregion Mina sidor*/
+
+.bookedm {
+    background-color: yellow;
+    border-color: #909E17;
+}
+
+.bookedf {
+    background-color: red;
+    border-color: #A40101;
+}
+
+/* #region Footer*/
+div.footer {
+    background-color: #65986c;
+    height: 100%;
+    margin-bottom: auto;
+    bottom: 0;
+    float: left;
+    width: 100%;
+}
+
+div.footerSections {
+    padding-top: 2%;
+    float: left;
+    width: 33.3%;
+}
+
+
+div.footer ul, div.footer h3 {
+    margin-left: 7%;
+    /*margin-top: 7%;*/
+    list-style-type: none;
+}
+
+div.footer h3 {
+    font-size: 2em;
+    color: #f1b516;
+    /*border-bottom: 2px solid #033b12;*/
+    display: inline;
+}
+
+
+div.footer ul, div.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+div.copywrite {
+    margin: 0,0,0,0;
+    height: auto;
+    float: left;
+    width: 100%;
+    padding-top: 2%;
+}
+
+    div.copywrite p {
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+/*#endregion Footer*/
+
+.clear:before, .clear:after {
+    content: "";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+#ContentPlaceHolder1_ButtonRegister {
+    margin-top: 20px;
+}
+
+.buttonRegister {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#ContentPlaceHolder1_DropCategory {
+    width: 35%;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.register-h1 {
+    margin-bottom: 20px;
+}
+
+div.footer {
+    background-color: #65986c;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+div.footerSections {
+    text-align: center;
+}
+
+.copywrite .copy {
+}
+
+.copywrite .group {
+}
+
+#formLogin {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+
+.bookingDetailClass {
+    display: none;
+    float: right;
+    width: 500px;
+    height: 240px;
+    background-color: yellow;
+}
+
+.bookingDetailClass2 {
+    display: block;
+    float: right;
+    width: 500px;
+    height: 240px;
+    background-color: yellow;
+}
+
+.txtBoxBookingGolfIdClass {
+    margin-top: 150px;
+}
+
+.listboxLeft {
+    width: 48%;
+}
+
+.listBoxright {
+    float: right;
+    width: 48%;
+}
+
+/*
+.lblBookingDetailClassLast {
+    margin-bottom:150px;
+}*/
+.spacer-glyph {
+    margin-right: 10px;
+}
+
+.required {
+    color: red;
+    font-size: 0.8em;
+}
+
+.success-align {
+    text-align: center !important;
+}
+
+.footer .container {
+    background-color: #65986c;
+}
+
+form {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 405px;
+}
+
+#formStaffMember {
+    width: 68%;
+}
+
+#form1 {
+    width: 95%;
+}
+
+#startpageForm {
+    width: 97%;
+}
+
+.newsArticle {
+    border: 1px solid #E6E6E6;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+    float: left;
+    border-radius: 4px;
+}
+
+    .newsArticle h1 {
+        font-size: 1.3em;
+    }
+
+    .newsArticle h2 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 1.2em;
+        border-bottom: 1px solid #DADADA;
+        padding-bottom: 7px;
+    }
+
+.bodyText {
+    font-size: 0.8em;
+}
+
+.writtenBy {
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.imageText {
+    font-size: 0.8em;
+    margin-top: 6px;
+    text-align: left;
+}
+
+.bodyImage {
+    width: 100%;
+}
+
+.likeButton {
+}
+
+table {
+    width: 100% !important;
+}
+
+.likeDiv {
+    float: left;
+    width: 100%;
+    margin-top: 12px;
+    border-top: 1px solid #DEDEDE;
+    padding-top: 16px;
+    text-align: right;
+}
+
+.thumb {
+    padding: 8px;
+    background: #E7F3FF;
+    border-radius: 5px;
+    border: 1px solid #B7CDE4;
+}
+
+.numberLikes {
+    margin-right: 10px;
+}
+
+.dropDownNews {
+    width: 100%;
+}
+
+.navbar-inverse {
+    margin-top: -4px;
+}
+
+.heading_p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.imageExist {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.createNewNews {
+    float: right;
+}
+
+.h1_login {
+}
+
+#formBooking {
+    width: 100% !important;
+}
+
+.hiddenPage {
+    display: none;
+}
+
+#formNewsArchive {
+    width: 69%;
+}
+
+    #formNewsArchive #ContentPlaceHolder1_UpdatePanelArchive #ContentPlaceHolder1_PanelNewsArchive .newsArticle {
+        width: 48%;
+    }
+
+        #formNewsArchive #ContentPlaceHolder1_UpdatePanelArchive #ContentPlaceHolder1_PanelNewsArchive .newsArticle:nth-child(odd) {
+            margin-right: 2%;
+        }
+
+h2 {
+    margin-bottom: 20px;
+}
+
+#ContentPlaceHolder1_ButtonOpen {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.tableMinaBokningar {
+    border: 1px solid #E4E4E4;
+}
+
+    .tableMinaBokningar thead tr th {
+        background: #F6F6F6;
+        border-color: #CB0000;
+        border-radius: 0px;
+        border: 0px solid #929292;
+        border-top: 0px solid #797979 !important;
+        text-align: left;
+        border-bottom: 1px solid #E4E4E4;
+        border-right: 1px solid #E4E4E4;
+    }
+
+#ContentPlaceHolder1_ImageExist {
+    width: 100%;
+}
+
+#formAddCms {
+    width: 55%;
+}
+
+#ContentPlaceHolder1_LabelPage {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+#ContentPlaceHolder1_DropDownListPage {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ContentPlaceHolder1_PanelStartRight {
+    float: left;
+    width: 30%;
+}
+
+#ContentPlaceHolder1_PanelStartLeft {
+    float: left;
+    width: 68.5%;
+    margin-right: 1.5%;
+}
+
+    #ContentPlaceHolder1_PanelStartLeft img {
+        width: 100%;
+        max-height: 357px;
+        border-radius: 5px;
+    }
+
+#ContentPlaceHolder1_LabelCMS {
+    padding: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+#ContentPlaceHolder1_PanelButtons {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.button_block {
+    width: 30%;
+    float: left;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #E6E6E6;
+    margin-left: 1%;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+    .button_block:nth-child(1) {
+        margin-left: 2%;
+    }
+
+.button_icon {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #59946B;
+}
+
+.button_text {
+    width: 100%;
+    float: left;
+    color: #000;
+}
+
+#ContentPlaceHolder1_LabelTest {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+label {
+    font-weight: normal;
+}
+
+.btn-right {
+    float: right;
+}
+
+
+
+#ButtonCLoseLane {
+    padding-left: 20px;
+}
+
+div.stangbanan {
+    padding: 1px 16px 30px 0;
+    height: auto;
+    width: 80%;
+    float: left;
+}
+
+div.banastarttid {
+    float: left;
+    padding-right: 100px;
+    width: 40%;
+}
+
+
+div.banasluttid {
+    float: left;
+    width: 30%;
+}
+
+.startdatum, .starttid, .slutdatum, .sluttid {
+    padding: 20px 20px 20px 0px;
+}
+
+#TextBoxSlutdatum, #TextBoxStartdatum, #TextBoxStarttid, #TextBoxSluttid {
+    width: 150px;
+}
+
+div.ButtonClose {
+    width: 100%;
+    float: left;
+}
+
+#ContentPlaceHolder1_Label17 {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+#ContentPlaceHolder1_ListBoxAll {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 5px;
+}
+
+#ContentPlaceHolder1_Label18 {
+    float: left;
+    width: 48%;
+}
+
+#ContentPlaceHolder1_ListBoxChosen {
+    float: left;
+    width: 48%;
+    margin-bottom: 5px;
+}
+
+#ContentPlaceHolder1_Label19 {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+#ContentPlaceHolder1_TextBoxSortAll {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+#ContentPlaceHolder1_Label20 {
+    float: left;
+    width: 48%;
+}
+
+#ContentPlaceHolder1_TextBoxSortChosen {
+    float: left;
+    width: 48%;
+}
+
+/*-----------------Results---------------------*/
+
+#rbtLstHolder {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    margin: 20px 0 20px 0;
+}
+
+#ContentPlaceHolder1_rbtLstTee td {
+    min-width: 21%;
+    margin: 0 2% 0 2%;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px 2% 5px 2%;
+}
+
+    #ContentPlaceHolder1_rbtLstTee td:hover {
+        /* background-color:rgba(0, 255, 0, 0.3);*/
+    }
+
+#resultsTableHolder {
+    margin-top: 5px;
+}
+
+
+
+.resultsLstBox2 {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 30%;
+}
+
+.resultsLstBox1 {
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 65%;
+}
+
+#ContentPlaceHolder1_resultsTable {
+    margin: 8px 0 8px 8px;
+    float: left;
+}
+
+#ContentPlaceHolder1_Button1 {
+    margin: 0 0 8px 8px;
+}
+
+.button-memb {
+    float: left;
+    width: 50%;
+}
+
+.btn-add {
+    float: left;
+}
+
+.btn-remove {
+    float: right;
+}
+
+#ContentPlaceHolder1_RadioButtonListClass {
+}
+
+#ContentPlaceHolder1_hiddenResultsDetail {
+    visibility: hidden;
+}
+
+.black {
+    background-color: grey;
+}
+
+.blacks {
+    background-color: white;
+}
+
+.lbl-hid {
+    display: none;
+}
+
+#formMembAdd {
+    width: 60%;
+}
+
+div.pad {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.a-no-change:hover {
+    color: #9d9d9d !important;
+}
+
+.a-no-change:active {
+    color: #9d9d9d !important;
+}
+
+.dropDownMail {
+    width: 30%;
+}
+
+.form-textarea, #Headline, #ButtonMail{
+    margin-top: 25px;
+}
+#resultForm {
+    min-height:400px;
+}
+
+#Meddelande {
+  margin-bottom: 15px;
+}
+
+div.journalBody {
+    background-color: #f9f9f9;
+    padding: 2% 2%  2%;
+    /*border-color: #e4e4e4;*/
+    border:1px solid #e4e4e4;
+    margin-bottom: 5px;
+}
+
+div.UnbookCalendar {
+    float:left;
+}
+
+/*Chatt*/
+
+#idFormChat {
+   width: 65%;
+
+}
+
+div.chatContainer {
+    width: 100%;
+    height: auto;
+}
+
+div.chattBox {
+    width: 55%;
+    height: 380px;
+    float: right;
+}
+
+div.chattPers
+{
+    width: 45%; 
+    float: left;
+   
+}
+
+div.chattusers {
+   
+    width: 100%;
+}
+
+table.chattLines {
+    table-layout: fixed;
+    width: 100%;
+
+    /*overflow-y: scroll;
+    overflow-x: hidden;
+    overflow: hidden;
+    white-space: nowrap;*/
+}
+
+div.chattFlow {
+    height: 400px;
+    width: 100%;
+    background: rgba(173, 168, 168, 0.3);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+    margin-left: 25px;
+    margin-top:45px;
+}
+
+div.bottomChat {
+    width: 100%;
+    padding: 2% 0 0 0;
+}
+
+.chattuse {
+    /*height: 400px !important;*/
+    height:150px !important;
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+
+
+
+.chattro {
+    /*border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: inline;*/
+}
+
+.chattcel {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+div.chattNew
+{
+    width: 100%;
+    margin-top: 20px;
+   
+}
+.form-twnt {
+    width: 20%;
+    float: left;
+    margin-right:10px;
+}
+
+
+
+.new-chat {
+    margin-bottom: 17px;
+    /*margin-left: 20px;*/
+}
+
+#ContentPlaceHolder1_txtAddMemb {
+    /*width: 50%;*/
+    /*margin: 30px 25px 25px 0;*/
+    margin-right:15px;
+    margin-bottom:25px;
+    float:left;
+    height: 33px;
+    
+}
+
+
+
+#startChat {
+    /*margin: 30px 25px 25px 0;*/
+    /*float:left;*/
+}
+#ContentPlaceHolder1_TeamFormst {
+    margin-bottom: 25px;
+}
+#ContentPlaceHolder1_ButtonNewTeam {
+    display: none;
+    margin-top: 20px;
+}
+#tableTeamHolder {
+    max-height: 562px;
+    overflow-y: auto;
+}
+.liboxAddMember
+{
+    width: 200px;
+}
+.btnsub {
+    float: left;
+    margin-top: -5px;
+    margin-left: 5px;
+}
+.txtname {
+    width: 25%;
+}
+.tbme {
+    float: left;
+}
+
+div.chattMess {
+    width: 100%;
+    margin-left: 0;
+    float: left;
+    /*Rows="6" Columns="34*/
+}
+
+#buttonSendChat {
+    width:100%;
+}
+

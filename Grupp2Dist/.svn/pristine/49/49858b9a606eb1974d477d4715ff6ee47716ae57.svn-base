@@ -1,0 +1,309 @@
+﻿body {
+    /* background: #EFF1DA; */
+    font-size: 1em;
+    color: #000;
+    font-family: 'Abel', sans-serif;
+}
+table {
+    background: #FFF;
+}
+th {
+    font-size: 1.4em;
+}
+td {
+    font-size: 1.4em;
+}
+tr {
+
+}
+#LabelHiddenHole {
+    display: none;
+}
+.app_bg {
+    background: url(Images/app_bg.jpg) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.loginForm {
+    background: rgba(0, 0, 0, 0.57);
+    padding: 5%;
+    margin-top: 10%;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: normal;
+}
+label {
+    font-weight: normal;
+}
+#ButtonLogin {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-size: 2em;
+    margin-top: 10px;
+    text-shadow: -1px -1px #225536;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+span {
+
+}
+label {
+    font-size: 2em;
+}
+ul {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+li {
+    font-size: 2em;
+    background: #378857;
+    padding: 10px;
+    cursor: pointer;
+    list-style-type: none;
+}
+li:nth-last-child(1) {
+
+}
+.lbl {
+    font-size: 2em;
+}
+.lblname {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 7px;
+    font-size: 2em;
+}
+.form-control1 {
+    color: #439363;
+    background-color: #C3F3D6;
+    background-image: none;
+    border: 1px inset #79BE95;
+}
+#heading {
+    position: relative;
+    width: 100%;
+    float: left;
+    border-left: none;
+    border-right: none;
+    background: #44A56B;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.35);
+}
+#heading .menu span {
+    font-size: 2em;
+}
+.logo-glyph {
+
+}
+.menu {
+    text-shadow: -1px -1px #225536;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 1.4em;
+    color: #FFF;
+}
+.menu-popup {
+    display: none;
+    float: left;
+    width: 100%;
+    background: #297648;
+    z-index: 1;
+    position: relative;
+}
+.menu-popup ul li a {
+    color: #FFF;
+    text-shadow: 0px -1px rgba(0, 0, 0, 0.45);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.8em;
+}
+.menu-popup ul li {
+    color: #FFF;
+    border-bottom: 1px solid #337B50;
+}
+.leaderboard {
+    display: none;
+    width: 90%;
+    position: absolute;
+    margin-left: 5%;
+    height: 400px;
+    background: #378857;
+    top: 60px;
+    border-radius: 5px;
+}
+.leaderHeader {
+    text-align: center;
+    color: #FFF;
+}
+.showLeaderBoard {
+    display: none;
+}
+.leaderHeader span {
+    font-size: 0.7em;
+    color: #FFF900;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.closeLeader span {
+    color: #FFF;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.active {
+    display: block;
+}
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 100%;
+    padding: 5%;
+}
+form {
+
+}
+.chooseTournament {
+
+}
+.boxes {
+
+}
+.btn-start {
+    width: 100%;
+}
+.box {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 3%;
+}
+.box img {
+    width: 100%;
+    border-radius: 100%;
+}
+.box .text {
+    font-size: 2em;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.logout {
+    display: none;
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+}
+.logo {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#LabelHiddenTournamentID {
+    display: none;
+}
+
+.iphone {
+    width: 363px;
+    height: 629px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    background: #FFF;
+    top: 113px;
+    left: 38px;
+}
+.frame {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(Images/frame.png);
+    background-size: 436px 885px;
+    width: 439px;
+    height: 883px;
+}
+.frame_upper {
+    width: 364px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-left: -1px;
+    margin-top: 0px;
+}
+#rbtLstTee {
+    background: none;
+}
+#rbtLstTee tbody tr {
+    float: left;
+    width: 50%;
+    height: 135px;
+    border: 1px outset #FFFFFF;
+}
+#rbtLstTee tbody tr:nth-child(1) {
+    background: #FFF;
+}
+#rbtLstTee tbody tr:nth-child(2) {
+    background: #F5F57B;
+}
+#rbtLstTee tbody tr:nth-child(3) {
+    background: #66AAFF;
+}
+#rbtLstTee tbody tr:nth-child(4) {
+    background: #FF6262;
+}
+#rbtLstTee tbody tr td {
+    font-size: 1.4em;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 25%;
+}
+#DropDownListChoose {
+    background: #FFFDF0;
+    border: 1px solid #FAEBCC;
+    padding: 10px;
+    height: 50px;
+    color: #000;
+}
+#lblHoleNrApp {
+    font-size: 2em;
+}
+#lblPlayerPlaceApp {
+    font-size: 1.3em;
+}
+.antal-slag {
+    width: 35%;
+}
+#LabelNbr {
+    font-size: 1.5em;
+}
+#LabelHiddenTeam {
+    display: none;
+}
+#tableTeamHolder {
+
+}
