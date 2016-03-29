@@ -1,6 +1,0 @@
-c:\users\thebeast\documents\visual studio 2013\Projects\GolfBokning\GolfBokning\bin\GolfBokning.dll.config
-c:\users\thebeast\documents\visual studio 2013\Projects\GolfBokning\GolfBokning\bin\GolfBokning.dll
-c:\users\thebeast\documents\visual studio 2013\Projects\GolfBokning\GolfBokning\bin\GolfBokning.pdb
-c:\users\thebeast\documents\visual studio 2013\Projects\GolfBokning\GolfBokning\obj\Debug\GolfBokning.csprojResolveAssemblyReference.cache
-c:\users\thebeast\documents\visual studio 2013\Projects\GolfBokning\GolfBokning\obj\Debug\GolfBokning.dll
-c:\users\thebeast\documents\visual studio 2013\Projects\GolfBokning\GolfBokning\obj\Debug\GolfBokning.pdb
